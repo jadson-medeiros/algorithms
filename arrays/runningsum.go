@@ -1,5 +1,7 @@
 package main
 
+// LeetCode 1480 - Running Sum of 1d Array
+
 func runningSum(nums []int) []int {
 
 	curr_sum := 0
