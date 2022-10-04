@@ -13,6 +13,10 @@ func main() {
 
 func fibonacciIt(n int) int {
 
+	if n == 0 || n == 1 {
+		return n
+	}
+
 	count := 1
 
 	previous := 0
