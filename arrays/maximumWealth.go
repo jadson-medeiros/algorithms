@@ -10,7 +10,7 @@ func maximumWealth(accounts [][]int) int {
 		curr_sum := 0
 
 		for j := 0; j < len(accounts[0]); j++ {
-			curr_sum = curr_sum + accounts[i][j]
+			curr_sum += accounts[i][j]
 		}
 
 		if curr_sum > wealth {
