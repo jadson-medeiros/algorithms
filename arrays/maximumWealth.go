@@ -1,5 +1,7 @@
 package arrays
 
+import "fmt"
+
 // LeetCode - 1672. Richest Customer Wealth
 
 func maximumWealth(accounts [][]int) int {
@@ -19,4 +21,33 @@ func maximumWealth(accounts [][]int) int {
 	}
 
 	return wealth
+}
+
+// Other Solution
+
+func maximumWealth2(accounts [][]int) int {
+	total := len(accounts)
+
+	fmt.Println(total)
+	wealth := 0
+
+	for _, customer := range accounts {
+		sum_value := sumBank(customer)
+
+		if sum_value > wealth {
+			wealth = sum_value
+		}
+	}
+
+	return wealth
+}
+
+func sumBank(banks []int) int {
+	sum := 0
+
+	for _, bank := range banks {
+		sum += bank
+	}
+
+	return sum
 }
