@@ -1,6 +1,7 @@
 package arrays
 
 // LeetCode 1480 - Running Sum of 1d Array
+// Big O(n)
 
 func runningSum(nums []int) []int {
 
